@@ -1,4 +1,4 @@
-const faker = require('faker')
+const faker = require('faker');
 
 var ratingState = ['Buy', 'Hold', 'Sell'];
 var quarters = ['Q42016', 'Q12017', 'Q22017', 'Q32017', 'Q42017', 'Q12018', 'Q22018'];
@@ -13,15 +13,15 @@ for (var i = 0; i < 100; i++) {
 	var act = {};
 
 	quarters.forEach(function(element, index) {
-		var est.date = element;
-		var act.date = element;
-		var est.value = faker.commerce.price(100000000, 10000000000,  dec[2], symbol['']);
-		var act.value = est.value * (0.15 * Math.random() + 1)
+		est.date = element;
+		act.date = element;
+		est.value = faker.commerce.price(100000000, 10000000000,  dec[2], symbol['']);
+		act.value = est.value * (0.15 * Math.random() + 1)
 		estimatedArray.push(est.slice());
 		actualArray.push(est.slice());
 	})
 
-	for (var i = 0; i < (50 + Math.floor(150 * Math.random()))) {
+	for (var i = 0; i < (50 + Math.floor(150 * Math.random())); i++) {
 		var rater = {};
 		rater.id = faker.random.number(1000000);
 		rater.ratingState = ratingState[Math.floor(2.99 * Math.random())];
@@ -39,5 +39,7 @@ for (var i = 0; i < 100; i++) {
 
 	data.push(oneData);
 };
+
+console.log(data);
 
 exports.data = data;
