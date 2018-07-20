@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Data from '../../database/exampledata.js'
+
 import $ from 'jquery';
 console.log(data);
 class App extends React.Component {
@@ -21,6 +22,8 @@ class App extends React.Component {
   }
 }
 
+
 ReactDOM.render(<App />, document.getElementById('app'));
+
 
 console.log(Data);
