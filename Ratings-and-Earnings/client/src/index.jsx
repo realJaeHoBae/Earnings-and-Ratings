@@ -14,7 +14,7 @@ class App extends React.Component {
 
   render () {
     return (<div>
-    	<p>ddkjojoij f</p>
+      <p>ddkjojoij f</p>
     </div>)
   }
 
@@ -22,8 +22,4 @@ class App extends React.Component {
   }
 }
 
-
 ReactDOM.render(<App />, document.getElementById('app'));
-
-
-console.log(Data);
