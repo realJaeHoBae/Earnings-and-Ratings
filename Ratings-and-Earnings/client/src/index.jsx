@@ -1,8 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import $ from 'jquery';
-import Search from './components/Search.jsx';
-import RepoList from './components/RepoList.jsx';
 
 class App extends React.Component {
   constructor(props) {
@@ -12,16 +10,13 @@ class App extends React.Component {
 
   }
 
-  search (term) {
-    
-  }
-
   render () {
-    
+    return (<div>
+    	<p>ddkjojoij f</p>
+    </div>)
   }
 
   componentDidMount() {
-    
   }
 }
 
